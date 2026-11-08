@@ -263,7 +263,7 @@ WantedBy=multi-user.target
 
 **Vanilla'da bilmeniz gerekenler:**
 - PanelCraft ilk açılışta küçük bir veri paketi ekler (`<dünya>/datapacks/panelcraft/`) ve veri paketlerini yeniden yükler. `/trigger panelcraft set <kod>` (karakter bağlama) için gereklidir.
-- Minecraft hesabı bağlama yalnızca `online-mode=true` iken çalışır. Çevrim dışı moddaki vanilla sunucuda herkes istediği adla girebilir; bu yüzden panel hesaplarını PanelCraft konsolunda `panelcraft adduser <ad>` ile oluşturursunuz (bkz. [Moderatör eklemek](#moderatör-eklemek)).
+- Minecraft hesabı bağlama yalnızca `online-mode=true` iken çalışır. Çevrim dışı moddaki sunucuda herkes istediği adla girebilir; bu yüzden (oyun içi giriş açık değilse) panel hesaplarını konsolda `panelcraft adduser <ad>` ile oluşturursunuz (bkz. [Moderatör eklemek](#moderatör-eklemek)).
 - Vanilla'da oyun içi `/login` koruması yoktur.
 - Veri klasörü, PanelCraft klasörünün içindeki `config/panelcraft/` klasörüdür.
 
@@ -407,7 +407,7 @@ Kişinin sunucuya en az bir kez girmiş olması gerekir.
 
 Davet 72 saat geçerlidir (`[users] invite_hours`). Bir oyuncu davetsiz de bağlanabilir; o zaman siz Kullanıcılar sayfasında **Rolü değiştir…** ile rol verene kadar **Rol bekleniyor** ekranını görür.
 
-**Çevrim dışı moddaki vanilla sunucular:** bağlama kullanılamaz. PanelCraft konsolunda `panelcraft adduser <ad>` çalıştırın. Tek kullanımlık bir kod yazar (kod dosyasına, 30 dakika geçerli); oyuncu giriş sayfasında **Sıfırlama kodu kullan**'ı seçer, kodu girer ve şifresini belirler. Sonra Kullanıcılar sayfasından ona bir rol verin.
+**Çevrim dışı moddaki sunucular** (vanilla ya da oyun içi girişi kapalı mod/plugin sunucusu): bağlama kullanılamaz. Sunucu konsolunda (vanilla'da PanelCraft'ın kendi konsolunda) `panelcraft adduser <ad>` çalıştırın. Tek kullanımlık bir kod yazar (kod dosyasına, 30 dakika geçerli); oyuncu giriş sayfasında **Sıfırlama kodu kullan**'ı seçer, kodu girer ve şifresini belirler. Sonra Kullanıcılar sayfasından ona bir rol verin.
 
 **Çevrim dışı moddaki mod/eklenti sunucuları:** oyun içi giriş açıkken (varsayılan, aşağıya bakın) bağlama yukarıdaki gibi çalışır, çünkü oyuncular adlarını `/login` ile kanıtlamıştır.
 
@@ -569,7 +569,7 @@ Panelden değiştirdiğiniz mod ayarları, modların kendi yapılandırma dosyal
 | Komut | Ne yapar |
 |---|---|
 | `panelcraft reset <ad>` | O panel kullanıcısının şifresini **ve iki adımlı doğrulamasını** temizler, oturumlarını kapatır ve bir sıfırlama kodu yazar (30 dakika geçerli). |
-| `panelcraft adduser <ad>` | Yalnızca vanilla (ayrı program): rolsüz bir panel hesabı oluşturur ve tek kullanımlık bir kod yazar. |
+| `panelcraft adduser <ad>` | Rolsüz bir panel hesabı oluşturur ve tek kullanımlık bir kod yazar. Her sunucu türünde çalışır; mod ve plugin sunucularında sunucu konsolunda çalıştırın. |
 | `panelcraft help` | Komutları listeler. |
 | `stop` ya da `panelcraft stop` | Yalnızca vanilla (ayrı program): PanelCraft'ı temiz şekilde durdurur. |
 

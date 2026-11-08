@@ -263,7 +263,7 @@ WantedBy=multi-user.target
 
 **Good to know on vanilla:**
 - On first start PanelCraft adds a small data pack, `<world>/datapacks/panelcraft/`, and reloads data packs. It's needed for `/trigger panelcraft set <code>` (linking).
-- Linking a Minecraft account only works with `online-mode=true`. On an offline-mode vanilla server anyone can join under any name, so you create panel accounts from PanelCraft's console with `panelcraft adduser <name>` instead (see [Adding moderators](#adding-moderators)).
+- Linking a Minecraft account only works with `online-mode=true`. On an offline-mode server anyone can join under any name, so (unless in-game login is on) you create panel accounts from the console with `panelcraft adduser <name>` instead (see [Adding moderators](#adding-moderators)).
 - There is no in-game `/login` protection on vanilla.
 - The data folder is `config/panelcraft/` inside PanelCraft's folder.
 
@@ -407,7 +407,7 @@ The person must have joined the server at least once.
 
 The invitation is valid for 72 hours (`[users] invite_hours`). A player can also link without an invitation: they then see **Waiting for a role** until you give them one with **Change role…** on the Users page.
 
-**Offline-mode vanilla servers:** linking isn't available. In PanelCraft's console run `panelcraft adduser <name>`. It writes a one-time code (to the code file, valid 30 minutes); the player chooses **Use a reset code** on the sign-in page, enters it and sets a password. Then give them a role on the Users page.
+**Offline-mode servers** (vanilla, or a mod/plugin server without in-game login): linking isn't available. Run `panelcraft adduser <name>` in the server console (on vanilla: PanelCraft's own console). It writes a one-time code (to the code file, valid 30 minutes); the player chooses **Use a reset code** on the sign-in page, enters it and sets a password. Then give them a role on the Users page.
 
 **Offline-mode mod/plugin servers:** with in-game login on (the default, see below), linking works as above, because players have proven their name with `/login`.
 
@@ -569,7 +569,7 @@ Mod settings you changed through the panel stay changed in the mods' own config 
 | Command | What it does |
 |---|---|
 | `panelcraft reset <name>` | Clears that panel user's password **and two-factor**, signs them out and writes a reset code (valid 30 minutes). |
-| `panelcraft adduser <name>` | Vanilla (standalone) only: creates a panel account without a role and writes a one-time code. |
+| `panelcraft adduser <name>` | Creates a panel account without a role and writes a one-time code. Works on every server type; on mod and plugin servers run it in the server console. |
 | `panelcraft help` | Lists the commands. |
 | `stop` or `panelcraft stop` | Vanilla (standalone) only: stops PanelCraft cleanly. |
 
