@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PanelCraft</title>
+<meta name="description" content="A web moderation panel for Minecraft servers. Forge, NeoForge, Fabric, Paper and vanilla. Free to use.">
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" hreflang="tr" href="tr.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>PanelCraft</a>
+    <nav aria-label="Main">
+      <a class="hide-sm" href="#screenshots">Screenshots</a>
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#download">Download</a>
+      <a class="lang" href="tr.html" hreflang="tr" lang="tr">Türkçe</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Run your Minecraft server from the browser.</h1>
+    <p class="lede">PanelCraft is a web moderation panel. Players, chat, bans, inventories, the world map, backups and mod settings in one place, for you and your staff. Players don't install anything.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/panelcraft/panelcraft/releases/latest">Download the latest release</a>
+      <a class="btn" href="https://github.com/panelcraft/panelcraft#install">Installation guide</a>
+    </div>
+    <ul class="platforms" aria-label="Supported servers">
+      <li>Forge 1.20.1</li>
+      <li>NeoForge 1.21.1 · 26.3</li>
+      <li>Fabric 1.20.1 · 1.21.1</li>
+      <li>Paper 1.21.1 · 26.3</li>
+      <li>Vanilla 1.20.1 – 26.3 (via RCON)</li>
+      <li>English · Türkçe</li>
+    </ul>
+  </div>
+
+  <section id="screenshots">
+    <div class="wrap">
+      <h2>Screenshots</h2>
+      <p class="sub">A look at some of the pages.</p>
+      <div class="gallery">
+        <figure class="shot" data-placeholder="status.png"><img src="screenshots/status.png" alt="Status page" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Status</b><span>The server at a glance.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="players.png"><img src="screenshots/players.png" alt="Players page" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Players</b><span>Everyone who has joined, online or not.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="profile.png"><img src="screenshots/profile.png" alt="Player profile" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Player profile</b><span>Inventory, history, notes and actions.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="loot-detail.png"><img src="screenshots/loot-detail.png" alt="Loot table detail" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Loot table detail</b><span>Items, conditions, and what other mods add.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="map.png"><img src="screenshots/map.png" alt="World map" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>World map</b><span>Drawn from the saved world, with live player positions.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="spawn-mobs.png"><img src="screenshots/spawn-mobs.png" alt="Spawning mobs" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Mobs</b><span>See loaded mobs and spawn new ones.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="loot.png"><img src="screenshots/loot.png" alt="Loot tables" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Loot tables</b><span>What chests, mobs and fishing give, and changing it.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="mod-settings.png"><img src="screenshots/mod-settings.png" alt="Mod settings" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Mod settings</b><span>Mod configuration with descriptions and risk levels.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="find-blocks.png"><img src="screenshots/find-blocks.png" alt="Finding blocks" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>World tools</b><span>Find blocks, structures and biomes without loading chunks.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="companion-protection.png"><img src="screenshots/companion-protection.png" alt="Companion protection" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Companion protection</b><span>Stop players from hurting pets and companions.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="turkish.png"><img src="screenshots/turkish.png" alt="The panel in Turkish" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Türkçe</b><span>The whole panel, and game names, in Turkish.</span></figcaption></figure>
+        <figure class="shot" data-placeholder="game-theme.png"><img src="screenshots/game-theme.png" alt="Game theme" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption><b>Game theme</b><span>A Minecraft-style look, one click away.</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>Features</h2>
+      <p class="sub">Grouped like the panel's sidebar. What you see depends on your server type and your role.</p>
+      <div class="groups">
+        <div class="group">
+          <h3>Server</h3>
+          <ul>
+            <li><b>Status</b> of the server at a glance</li>
+            <li><b>Console</b>, live, with commands for allowed roles</li>
+            <li><b>Restart</b> with an in-game countdown, and <b>maintenance mode</b></li>
+            <li><b>Backups</b> of the whole world, download and restore</li>
+            <li><b>Mod settings</b> from the browser</li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>World</h3>
+          <ul>
+            <li><b>World settings</b>: rules, difficulty, time, weather</li>
+            <li><b>World map</b> with live players</li>
+            <li><b>World tools</b>: find structures, biomes and blocks</li>
+            <li><b>Companion protection</b> for pets</li>
+            <li><b>Block log</b> with rollback</li>
+            <li><b>Storage</b> activity and <b>loot tables</b></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Creatures</h3>
+          <ul>
+            <li><b>Mobs</b> around a player, and spawning</li>
+            <li><b>Vehicles</b> and ride log</li>
+            <li><b>NPCs</b> and <b>bounty boards</b> with Easy NPC and Bountiful</li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Community</h3>
+          <ul>
+            <li><b>Player profiles</b>: inventory, deaths, XP, effects, notes, alts</li>
+            <li>Warn, mute, freeze, vanish, kick, temporary and permanent bans</li>
+            <li><b>Chat</b> log and <b>chat filter</b> with escalating sanctions</li>
+            <li><b>Reports</b> from <code>/report</code> in game</li>
+            <li><b>In-game login</b> for offline-mode servers</li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Panel</h3>
+          <ul>
+            <li><b>Roles</b> with ranks and Player / Moderator / Admin templates</li>
+            <li>Two-factor sign-in, required for the owner</li>
+            <li><b>Audit log</b> of every action</li>
+            <li>English and Turkish, light and dark</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Not every feature exists on every server type. Vanilla servers (through RCON) get players, bans, chat, console, world settings, restarts, maintenance and backups. Integrations for more than 30 mods (Curios, FTB Quests, Waystones, Simple Voice Chat, Gravestone and others) exist on Forge 1.20.1 only, and switch on only when the mod is installed. The <a href="https://github.com/panelcraft/panelcraft#what-each-server-type-can-do">full comparison</a> is in the guide.</p>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="wrap">
+      <h2>Download</h2>
+      <p class="sub">Pick the one file that matches your server from the <a href="https://github.com/panelcraft/panelcraft/releases/latest">latest release</a>.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Your server</th><th>Minecraft</th><th>File</th><th>Goes in</th></tr></thead>
+          <tbody>
+            <tr><td>Forge</td><td>1.20.1</td><td><code>panelcraft-forge-1.20.1-0.1.0.jar</code></td><td><code>mods/</code></td></tr>
+            <tr><td>NeoForge</td><td>1.21.1</td><td><code>panelcraft-neoforge-1.21.1-0.1.0.jar</code></td><td><code>mods/</code></td></tr>
+            <tr><td>NeoForge</td><td>26.3</td><td><code>panelcraft-neoforge-26.3-0.1.0.jar</code></td><td><code>mods/</code></td></tr>
+            <tr><td>Fabric (+ Fabric API)</td><td>1.20.1</td><td><code>panelcraft-fabric-1.20.1-0.1.0.jar</code></td><td><code>mods/</code></td></tr>
+            <tr><td>Fabric (+ Fabric API)</td><td>1.21.1</td><td><code>panelcraft-fabric-1.21.1-0.1.0.jar</code></td><td><code>mods/</code></td></tr>
+            <tr><td>Paper</td><td>1.21.1</td><td><code>panelcraft-paper-1.21.1-0.1.0.jar</code></td><td><code>plugins/</code></td></tr>
+            <tr><td>Paper</td><td>26.3</td><td><code>panelcraft-paper-26.3-0.1.0.jar</code></td><td><code>plugins/</code></td></tr>
+            <tr><td>Vanilla</td><td>1.20.1 – 26.3</td><td><code>panelcraft-standalone-0.1.0.jar</code></td><td>its own folder</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 style="margin-top:40px">Three steps</h2>
+      <p class="sub">The <a href="https://github.com/panelcraft/panelcraft#install">installation guide</a> explains every step, including PufferPanel, Pterodactyl and HTTPS.</p>
+      <ol class="steps">
+        <li>Put the file in <code>mods/</code> or <code>plugins/</code> and start the server. The console says <code>PanelCraft listening on port 8150</code>.</li>
+        <li>Open the one-time code file, <code>config/panelcraft/one-time-code.txt</code> (Paper: <code>plugins/PanelCraft/</code>).</li>
+        <li>Open the panel in your browser, enter the code and your Minecraft name, and turn on two-factor sign-in.</li>
+      </ol>
+      <div class="cta" style="margin-top:28px">
+        <a class="btn primary" href="https://github.com/panelcraft/panelcraft/releases/latest">Download</a>
+        <a class="btn" href="https://github.com/panelcraft/panelcraft#install">Read the guide</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>PanelCraft is free to use, including on commercial servers. <a href="https://github.com/panelcraft/panelcraft/blob/main/LICENSE">Licence</a>.</span>
+    <span><a href="https://github.com/panelcraft/panelcraft/issues">Report a problem</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
+  </div>
+</footer>
+
+</body>
+</html>

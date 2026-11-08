@@ -1,0 +1,73 @@
+PanelCraft Freeware Licence
+
+Copyright (c) 2026 PanelCraft. All rights reserved.
+
+"Software" means the PanelCraft program files (jar files) published in the
+releases of https://github.com/panelcraft/panelcraft, and any documentation
+that comes with them.
+
+1. Permission to use
+
+   You may download the Software free of charge and install and run it on any
+   number of Minecraft servers that you own, operate or administer, including
+   servers that earn money (for example servers with donations, ranks or paid
+   access). You may make copies of the Software only as needed for that use
+   and for your own backups.
+
+2. Restrictions
+
+   You may not, and may not let anyone else:
+
+   a. modify, adapt, translate or create derivative works of the Software;
+   b. decompile, disassemble or reverse engineer the Software in order to
+      copy, publish or redistribute any part of it, or to build a competing
+      product, except where applicable law expressly allows this despite this
+      restriction;
+   c. sell, rent, lease, sublicense or otherwise charge for the Software
+      itself, or include it in a product or package that is sold;
+   d. redistribute, re-upload or mirror the Software anywhere other than the
+      official release page, including modpacks, plugin or mod sites and file
+      hosts, without prior written permission from PanelCraft;
+   e. remove or alter any copyright, licence or ownership notice in the
+      Software.
+
+   Installing the Software on a server you run for someone else (for example
+   as a server host or administrator) counts as use under section 1, as long
+   as the files are taken from the official release page.
+
+3. Ownership
+
+   The Software is licensed, not sold. PanelCraft keeps all rights, title and
+   interest in the Software. No rights are granted other than those written in
+   this licence.
+
+4. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. YOU USE IT AT YOUR
+   OWN RISK. KEEP YOUR OWN BACKUPS OF YOUR WORLDS AND DATA.
+
+5. Limitation of liability
+
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL PANELCRAFT OR ITS
+   CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+   AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE SOFTWARE OR THE USE OF OR OTHER DEALINGS IN THE
+   SOFTWARE, INCLUDING LOSS OF DATA, WORLDS, PROFITS OR PLAYERS.
+
+6. Termination
+
+   This licence ends automatically if you break any of its terms. You must
+   then stop using the Software and delete all copies of it.
+
+7. Third-party components
+
+   The Software includes third-party libraries that remain under their own
+   licences. Nothing in this licence limits rights you have under those
+   licences for those libraries.
+
+8. Minecraft
+
+   PanelCraft is not an official Minecraft product and is not approved by or
+   associated with Mojang or Microsoft.
