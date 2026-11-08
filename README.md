@@ -1,6 +1,18 @@
 # PanelCraft
 
-**English** · [Türkçe](README.tr.md) · [Website](https://panelcraft.github.io/panelcraft/) · [Download](https://github.com/panelcraft/panelcraft/releases/latest)
+**English** · [Türkçe](README.tr.md)
+
+**PanelCraft is a free web admin and moderation panel for Minecraft servers (Forge, NeoForge, Fabric, Paper, and vanilla over RCON) that you and your staff open in a browser.**
+
+[![Price: free](https://img.shields.io/badge/price-free-3f8a2e)](#licence)
+[![Licence: proprietary freeware](https://img.shields.io/badge/licence-proprietary%20freeware-5b6458)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/panelcraft/panelcraft?label=latest%20release)](https://github.com/panelcraft/panelcraft/releases/latest)
+[![Minecraft 1.20.1 – 26.3](https://img.shields.io/badge/Minecraft-1.20.1%20%E2%80%93%2026.3-3f8a2e)](#which-file-do-i-download)
+[![Forge · NeoForge · Fabric · Paper · vanilla](https://img.shields.io/badge/servers-Forge%20%C2%B7%20NeoForge%20%C2%B7%20Fabric%20%C2%B7%20Paper%20%C2%B7%20vanilla-5b6458)](#what-each-server-type-can-do)
+
+**[Download](https://github.com/panelcraft/panelcraft/releases/latest)** · **[Website](https://panelcraft.github.io/panelcraft/)** · **[Report a bug](https://github.com/panelcraft/panelcraft/issues/new?template=bug_report.md)** · **[Suggest a feature](https://github.com/panelcraft/panelcraft/discussions)**
+
+> **Free, but not open source.** PanelCraft is free to download and use on any number of servers, including commercial ones. It is proprietary freeware: the source code is not published, and you may not modify, resell or re-upload the files (see [Licence](#licence)). That makes your feedback the way PanelCraft gets better: report bugs in [Issues](https://github.com/panelcraft/panelcraft/issues) and share ideas and questions in [Discussions](https://github.com/panelcraft/panelcraft/discussions).
 
 PanelCraft is a web moderation panel for Minecraft servers. You open it in a browser and see your players, chat, world and backups in one place. It runs inside the server as a mod or plugin (Forge, NeoForge, Fabric, Paper), or as a separate program next to an unmodified vanilla server, which it talks to over RCON.
 
@@ -25,7 +37,7 @@ You don't need to know any programming. If you can copy a file into a folder and
 - [Commands](#commands)
 - [Troubleshooting](#troubleshooting)
 - [Licence](#licence)
-- [Reporting problems](#reporting-problems)
+- [Feedback and support](#feedback-and-support)
 
 ---
 
@@ -702,8 +714,15 @@ The Forge build also runs in a single-player world opened to LAN. The setup code
 
 ## Licence
 
-PanelCraft is **free to download and use**, including on commercial servers. It is **not open source**: you may not modify, decompile for redistribution, resell or re-upload the files elsewhere. It comes **as is, without warranty**. Read the full text in [LICENSE](LICENSE). Bundled open-source libraries keep their own licences; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+PanelCraft is **free to download and use**, including on commercial servers. It is **not open source**: it is proprietary freeware, the source code is not published, and you may not modify, decompile for redistribution, resell or re-upload the files elsewhere. It comes **as is, without warranty**. Read the full text in [LICENSE](LICENSE). Bundled open-source libraries keep their own licences; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
-## Reporting problems
+<a id="reporting-problems"></a>
 
-The source code is not public. Please report bugs and ideas here, in [Issues](https://github.com/panelcraft/panelcraft/issues). Include your server type, Minecraft version, PanelCraft version, what you did, and the console lines starting with `PanelCraft`. **Remove passwords, codes, IP addresses and anything private before you post.**
+## Feedback and support
+
+Bug reports and suggestions are welcome. The source code is not public, so this repository is the place to tell us what works, what doesn't and what you'd like to see.
+
+- **Found a bug?** Open an issue with the [bug report template](https://github.com/panelcraft/panelcraft/issues/new?template=bug_report.md). Include your server type, Minecraft version, PanelCraft version, what you did, and the console lines starting with `PanelCraft`.
+- **Have an idea or a question?** Start a thread in [Discussions](https://github.com/panelcraft/panelcraft/discussions), or open a [feature request](https://github.com/panelcraft/panelcraft/issues/new?template=feature_request.md).
+
+**Remove passwords, codes, IP addresses and anything private before you post.**

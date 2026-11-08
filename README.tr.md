@@ -1,6 +1,18 @@
 # PanelCraft
 
-[English](README.md) · **Türkçe** · [Web sitesi](https://panelcraft.github.io/panelcraft/tr.html) · [İndir](https://github.com/panelcraft/panelcraft/releases/latest)
+[English](README.md) · **Türkçe**
+
+**PanelCraft, Minecraft sunucuları (Forge, NeoForge, Fabric, Paper ve RCON ile vanilla) için sizin ve yetkililerinizin tarayıcıda açtığı ücretsiz bir web yönetim ve moderasyon panelidir.**
+
+[![Fiyat: ücretsiz](https://img.shields.io/badge/fiyat-%C3%BCcretsiz-3f8a2e)](#lisans)
+[![Lisans: tescilli ücretsiz yazılım](https://img.shields.io/badge/lisans-tescilli%20%C3%BCcretsiz%20yaz%C4%B1l%C4%B1m-5b6458)](LICENSE)
+[![Son sürüm](https://img.shields.io/github/v/release/panelcraft/panelcraft?label=son%20s%C3%BCr%C3%BCm)](https://github.com/panelcraft/panelcraft/releases/latest)
+[![Minecraft 1.20.1 – 26.3](https://img.shields.io/badge/Minecraft-1.20.1%20%E2%80%93%2026.3-3f8a2e)](#hangi-dosyayı-indirmeliyim)
+[![Forge · NeoForge · Fabric · Paper · vanilla](https://img.shields.io/badge/sunucular-Forge%20%C2%B7%20NeoForge%20%C2%B7%20Fabric%20%C2%B7%20Paper%20%C2%B7%20vanilla-5b6458)](#sunucu-türüne-göre-özellikler)
+
+**[İndir](https://github.com/panelcraft/panelcraft/releases/latest)** · **[Web sitesi](https://panelcraft.github.io/panelcraft/tr.html)** · **[Hata bildir](https://github.com/panelcraft/panelcraft/issues/new?template=bug_report.md)** · **[Özellik öner](https://github.com/panelcraft/panelcraft/discussions)**
+
+> **Ücretsiz, ama açık kaynak değil.** PanelCraft'ı ticari sunucular dahil istediğiniz sayıda sunucuda ücretsiz indirip kullanabilirsiniz. Tescilli ücretsiz yazılımdır (freeware): kaynak kodu yayımlanmaz; dosyaları değiştiremez, satamaz ya da başka yerlere yükleyemezsiniz (bkz. [Lisans](#lisans)). Bu yüzden PanelCraft'ı geliştirmenin yolu geri bildiriminiz: hataları [Issues](https://github.com/panelcraft/panelcraft/issues) sayfasında bildirin, fikir ve sorularınızı [Discussions](https://github.com/panelcraft/panelcraft/discussions) sayfasında paylaşın. Türkçe yazabilirsiniz.
 
 PanelCraft, Minecraft sunucuları için bir web yönetim panelidir. Tarayıcıda açarsınız; oyuncularınızı, sohbeti, dünyayı ve yedekleri tek yerden görürsünüz. Sunucunun içinde mod ya da eklenti olarak (Forge, NeoForge, Fabric, Paper) veya hiç değiştirilmemiş bir vanilla sunucunun yanında ayrı bir program olarak çalışır; vanilla sunucuyla RCON üzerinden konuşur.
 
@@ -25,7 +37,7 @@ Programlama bilmeniz gerekmez. Bir dosyayı klasöre kopyalayıp bir metin dosya
 - [Komutlar](#komutlar)
 - [Sorun giderme](#sorun-giderme)
 - [Lisans](#lisans)
-- [Sorun bildirmek](#sorun-bildirmek)
+- [Geri bildirim ve destek](#geri-bildirim-ve-destek)
 
 ---
 
@@ -702,8 +714,15 @@ Forge sürümü, LAN'a açılmış tek oyunculu bir dünyada da çalışır. Kur
 
 ## Lisans
 
-PanelCraft'ı ticari sunucular dahil **ücretsiz indirip kullanabilirsiniz**. **Açık kaynak değildir**: dosyaları değiştiremez, yeniden dağıtmak için kaynak koda çeviremez, satamaz ya da başka yerlere yükleyemezsiniz. **Olduğu gibi, hiçbir garanti olmadan** sunulur. Tam metin: [LICENSE](LICENSE) (İngilizce). Paketteki açık kaynak kütüphaneler kendi lisanslarına tabidir; bkz. [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+PanelCraft'ı ticari sunucular dahil **ücretsiz indirip kullanabilirsiniz**. **Açık kaynak değildir**: tescilli ücretsiz yazılımdır (freeware), kaynak kodu yayımlanmaz; dosyaları değiştiremez, yeniden dağıtmak için kaynak koda çeviremez, satamaz ya da başka yerlere yükleyemezsiniz. **Olduğu gibi, hiçbir garanti olmadan** sunulur. Tam metin: [LICENSE](LICENSE) (İngilizce). Paketteki açık kaynak kütüphaneler kendi lisanslarına tabidir; bkz. [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
-## Sorun bildirmek
+<a id="sorun-bildirmek"></a>
 
-Kaynak kod herkese açık değildir. Hataları ve fikirleri lütfen buradan, [Issues](https://github.com/panelcraft/panelcraft/issues) sayfasından bildirin. Sunucu türünüzü, Minecraft sürümünüzü, PanelCraft sürümünüzü, ne yaptığınızı ve konsolda `PanelCraft` ile başlayan satırları ekleyin. **Göndermeden önce şifreleri, kodları, IP adreslerini ve özel her şeyi silin.**
+## Geri bildirim ve destek
+
+Hata bildirimlerini ve önerileri bekliyoruz. Kaynak kod herkese açık olmadığı için neyin çalıştığını, neyin çalışmadığını ve ne görmek istediğinizi bize bu depo üzerinden iletebilirsiniz. Türkçe yazabilirsiniz.
+
+- **Bir hata mı buldunuz?** [Hata bildirimi şablonuyla](https://github.com/panelcraft/panelcraft/issues/new?template=bug_report.md) bir issue açın. Sunucu türünüzü, Minecraft sürümünüzü, PanelCraft sürümünüzü, ne yaptığınızı ve konsolda `PanelCraft` ile başlayan satırları ekleyin.
+- **Bir fikriniz ya da sorunuz mu var?** [Discussions](https://github.com/panelcraft/panelcraft/discussions) sayfasında bir konu açın ya da bir [özellik isteği](https://github.com/panelcraft/panelcraft/issues/new?template=feature_request.md) gönderin.
+
+**Göndermeden önce şifreleri, kodları, IP adreslerini ve özel her şeyi silin.**

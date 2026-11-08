@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://panelcraft.github.io/panelcraft/sitemap.xml

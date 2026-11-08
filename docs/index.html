@@ -3,11 +3,127 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PanelCraft</title>
-<meta name="description" content="A web moderation panel for Minecraft servers. Forge, NeoForge, Fabric, Paper and vanilla. Free to use.">
+<title>PanelCraft: Minecraft server web admin and moderation panel for Forge, NeoForge, Fabric &amp; Paper</title>
+<meta name="description" content="PanelCraft is a free Minecraft server web admin and moderation panel for Forge, NeoForge, Fabric, Paper and vanilla (RCON). Players, chat, bans, world map, backups and mod settings in your browser. Free to use, not open source.">
 <meta name="color-scheme" content="light dark">
-<link rel="alternate" hreflang="tr" href="tr.html">
+<link rel="canonical" href="https://panelcraft.github.io/panelcraft/">
+<link rel="alternate" hreflang="en" href="https://panelcraft.github.io/panelcraft/">
+<link rel="alternate" hreflang="tr" href="https://panelcraft.github.io/panelcraft/tr.html">
+<link rel="alternate" hreflang="x-default" href="https://panelcraft.github.io/panelcraft/">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://panelcraft.github.io/panelcraft/llms.txt">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PanelCraft">
+<meta property="og:title" content="PanelCraft: Minecraft server web admin panel">
+<meta property="og:description" content="A web moderation panel for Forge, NeoForge, Fabric, Paper and vanilla Minecraft servers. Free to use, including on commercial servers. Not open source.">
+<meta property="og:url" content="https://panelcraft.github.io/panelcraft/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:image" content="https://panelcraft.github.io/panelcraft/screenshots/status.png">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="The PanelCraft status page">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PanelCraft: Minecraft server web admin panel">
+<meta name="twitter:description" content="A web moderation panel for Forge, NeoForge, Fabric, Paper and vanilla Minecraft servers. Free to use, not open source.">
+<meta name="twitter:image" content="https://panelcraft.github.io/panelcraft/screenshots/status.png">
+<meta name="twitter:image:alt" content="The PanelCraft status page">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "PanelCraft",
+  "description": "A web admin and moderation panel for Minecraft servers. Runs as a mod or plugin on Forge, NeoForge, Fabric and Paper, or as a standalone program next to a vanilla server over RCON. Free to use, not open source.",
+  "url": "https://panelcraft.github.io/panelcraft/",
+  "applicationCategory": "UtilitiesApplication",
+  "applicationSubCategory": "Minecraft server administration",
+  "operatingSystem": "Java",
+  "softwareVersion": "0.1.0",
+  "datePublished": "2026-11-08",
+  "downloadUrl": "https://github.com/panelcraft/panelcraft/releases/tag/v0.1.0",
+  "installUrl": "https://github.com/panelcraft/panelcraft#install",
+  "softwareHelp": "https://github.com/panelcraft/panelcraft#readme",
+  "license": "https://github.com/panelcraft/panelcraft/blob/main/LICENSE",
+  "isAccessibleForFree": true,
+  "inLanguage": ["en", "tr"],
+  "softwareRequirements": "Java 17, 21 or 25 (depending on the Minecraft version); Linux, Windows or macOS",
+  "screenshot": [
+    "https://panelcraft.github.io/panelcraft/screenshots/status.png",
+    "https://panelcraft.github.io/panelcraft/screenshots/players.png",
+    "https://panelcraft.github.io/panelcraft/screenshots/map.png"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Forge 1.20.1, NeoForge 1.21.1 and 26.3, Fabric 1.20.1 and 1.21.1, Paper 1.21.1 and 26.3",
+    "Vanilla 1.20.1 to 26.3 through a standalone program over RCON",
+    "Live console, restarts with an in-game countdown, maintenance mode",
+    "World backups with download and restore",
+    "Mod settings editor",
+    "World map with live player positions",
+    "Find structures, biomes and blocks without loading chunks",
+    "Block log with rollback",
+    "Loot table viewer and editor",
+    "Player profiles with inventory, history and notes",
+    "Warn, mute, freeze, vanish, kick, temporary and permanent bans",
+    "Chat log and chat filter with escalating sanctions",
+    "In-game reports and in-game login for offline-mode servers",
+    "Staff roles with templates, two-factor sign-in and an audit log",
+    "English and Turkish, light and dark"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is PanelCraft free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can download PanelCraft free of charge and run it on any number of Minecraft servers you own, operate or administer, including servers that earn money through donations, ranks or paid access." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is PanelCraft open source?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. PanelCraft is proprietary freeware: free to use, but the source code is not published. The licence does not allow modifying it, decompiling it for redistribution, reselling it or re-uploading the files outside the official release page. The open-source libraries bundled inside keep their own licences." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Minecraft servers and versions does PanelCraft support?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Version 0.1.0 has one file for each of Forge 1.20.1, NeoForge 1.21.1, NeoForge 26.3, Fabric 1.20.1, Fabric 1.21.1 (with Fabric API), Paper 1.21.1 and Paper 26.3, plus a standalone program for vanilla servers from 1.20.1 to 26.3, which works over RCON. Each mod and plugin file works only on its exact Minecraft version. Spigot, Bukkit and Folia are not supported." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PanelCraft need a separate server or database?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. As a mod or plugin it runs inside the Minecraft server's own Java process with a built-in database. On vanilla it runs as a separate program on the same machine as the server and talks to it over RCON. Players don't install anything." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to open the panel from the internet?",
+      "acceptedAnswer": { "@type": "Answer", "text": "By default the panel only answers on the server machine itself (127.0.0.1, port 8150). Don't expose port 8150 over plain http. For remote access, put it behind HTTPS with a reverse proxy such as Caddy or nginx, or use an SSH tunnel. Two-factor sign-in is required for the owner and can be required per role, and every panel action is written to an audit log." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does PanelCraft work with modpacks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can add it to a modded Forge, NeoForge or Fabric server as one jar in the mods folder, as long as it matches the server's exact Minecraft version. On Forge 1.20.1 it has integrations for more than 30 mods, built for the mod set of the Legendary Edition modpack, and each one switches on only when that mod is installed. The licence does not allow including PanelCraft in a modpack you distribute without written permission; install it on the server instead." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the panel available in English and Turkish?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The whole panel is in English and Turkish, and each staff member chooses their own language. Item, block and mob names come from the game's and the mods' own language files." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I report a bug or suggest a feature?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Report bugs in GitHub Issues at https://github.com/panelcraft/panelcraft/issues using the bug report template, and share ideas and questions in GitHub Discussions at https://github.com/panelcraft/panelcraft/discussions. Feedback is welcome. Remove passwords, setup codes and IP addresses before you post." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -18,6 +134,7 @@
       <a class="hide-sm" href="#screenshots">Screenshots</a>
       <a class="hide-sm" href="#features">Features</a>
       <a class="hide-sm" href="#download">Download</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
       <a class="lang" href="tr.html" hreflang="tr" lang="tr">Türkçe</a>
     </nav>
   </div>
@@ -25,8 +142,9 @@
 
 <main>
   <div class="wrap hero">
+    <p class="eyebrow">Minecraft server web admin panel</p>
     <h1>Run your Minecraft server from the browser.</h1>
-    <p class="lede">PanelCraft is a web moderation panel. Players, chat, bans, inventories, the world map, backups and mod settings in one place, for you and your staff. Players don't install anything.</p>
+    <p class="lede">Drop one jar into <code>mods/</code> or <code>plugins/</code>, and you and your staff get players, chat, bans, inventories, the world map, backups and mod settings in a browser tab. On vanilla it runs next to the server over RCON. Players don't install anything.</p>
     <div class="cta">
       <a class="btn primary" href="https://github.com/panelcraft/panelcraft/releases/latest">Download the latest release</a>
       <a class="btn" href="https://github.com/panelcraft/panelcraft#install">Installation guide</a>
@@ -39,6 +157,11 @@
       <li>Vanilla 1.20.1 – 26.3 (via RCON)</li>
       <li>English · Türkçe</li>
     </ul>
+    <aside class="strip" aria-label="Licence and feedback">
+      <p class="strip-tags"><span>Free</span><span>Not open source</span><span>Feedback welcome</span></p>
+      <p>Free to use on any number of servers, including commercial ones. PanelCraft is proprietary freeware: the source code is not published. Found a bug or have an idea? Tell us.</p>
+      <p class="strip-links"><a href="https://github.com/panelcraft/panelcraft/issues/new?template=bug_report.md">Report a bug</a> <a href="https://github.com/panelcraft/panelcraft/discussions">Suggest a feature</a> <a href="https://github.com/panelcraft/panelcraft/blob/main/LICENSE">Read the licence</a></p>
+    </aside>
   </div>
 
   <section id="screenshots">
@@ -153,12 +276,53 @@
       </div>
     </div>
   </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>Frequently asked questions</h2>
+      <p class="sub">Short answers. The <a href="https://github.com/panelcraft/panelcraft#readme">guide</a> has the details.</p>
+      <div class="faq">
+        <div class="qa">
+          <h3>Is PanelCraft free?</h3>
+          <p>Yes. You can download PanelCraft free of charge and run it on any number of Minecraft servers you own, operate or administer, including servers that earn money through donations, ranks or paid access.</p>
+        </div>
+        <div class="qa">
+          <h3>Is PanelCraft open source?</h3>
+          <p>No. PanelCraft is proprietary freeware: free to use, but the source code is not published. The <a href="https://github.com/panelcraft/panelcraft/blob/main/LICENSE">licence</a> does not allow modifying it, decompiling it for redistribution, reselling it or re-uploading the files outside the official release page. The open-source libraries bundled inside keep their own licences.</p>
+        </div>
+        <div class="qa">
+          <h3>Which Minecraft servers and versions does PanelCraft support?</h3>
+          <p>Version 0.1.0 has one file for each of Forge 1.20.1, NeoForge 1.21.1, NeoForge 26.3, Fabric 1.20.1, Fabric 1.21.1 (with Fabric API), Paper 1.21.1 and Paper 26.3, plus a standalone program for vanilla servers from 1.20.1 to 26.3, which works over RCON. Each mod and plugin file works only on its exact Minecraft version. Spigot, Bukkit and Folia are not supported.</p>
+        </div>
+        <div class="qa">
+          <h3>Does PanelCraft need a separate server or database?</h3>
+          <p>No. As a mod or plugin it runs inside the Minecraft server's own Java process with a built-in database. On vanilla it runs as a separate program on the same machine as the server and talks to it over RCON. Players don't install anything.</p>
+        </div>
+        <div class="qa">
+          <h3>Is it safe to open the panel from the internet?</h3>
+          <p>By default the panel only answers on the server machine itself (<code>127.0.0.1</code>, port 8150). Don't expose port 8150 over plain <code>http://</code>. For remote access, put it behind HTTPS with a reverse proxy such as Caddy or nginx, or use an SSH tunnel. Two-factor sign-in is required for the owner and can be required per role, and every panel action is written to an audit log. See <a href="https://github.com/panelcraft/panelcraft#securing-the-panel">Securing the panel</a>.</p>
+        </div>
+        <div class="qa">
+          <h3>Does PanelCraft work with modpacks?</h3>
+          <p>You can add it to a modded Forge, NeoForge or Fabric server as one jar in the <code>mods/</code> folder, as long as it matches the server's exact Minecraft version. On Forge 1.20.1 it has integrations for more than 30 mods, built for the mod set of the Legendary Edition modpack, and each one switches on only when that mod is installed. The licence does not allow including PanelCraft in a modpack you distribute without written permission; install it on the server instead.</p>
+        </div>
+        <div class="qa">
+          <h3>Is the panel available in English and Turkish?</h3>
+          <p>Yes. The whole panel is in English and Turkish, and each staff member chooses their own language. Item, block and mob names come from the game's and the mods' own language files.</p>
+        </div>
+        <div class="qa">
+          <h3>How do I report a bug or suggest a feature?</h3>
+          <p>Report bugs in <a href="https://github.com/panelcraft/panelcraft/issues">GitHub Issues</a> using the bug report template, and share ideas and questions in <a href="https://github.com/panelcraft/panelcraft/discussions">GitHub Discussions</a>. Feedback is welcome. Remove passwords, setup codes and IP addresses before you post.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>PanelCraft is free to use, including on commercial servers. <a href="https://github.com/panelcraft/panelcraft/blob/main/LICENSE">Licence</a>.</span>
-    <span><a href="https://github.com/panelcraft/panelcraft/issues">Report a problem</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
+    <span>PanelCraft is free to use, including on commercial servers. It is not open source. <a href="https://github.com/panelcraft/panelcraft/blob/main/LICENSE">Licence</a>.</span>
+    <span><a href="https://github.com/panelcraft/panelcraft/issues">Report a problem</a> · <a href="https://github.com/panelcraft/panelcraft/discussions">Share an idea</a> · Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
   </div>
 </footer>
 

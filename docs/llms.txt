@@ -1,0 +1,53 @@
+# PanelCraft
+
+> PanelCraft is a free web admin and moderation panel for Minecraft servers (Forge, NeoForge, Fabric, Paper, and vanilla via RCON). It is free to use, including on commercial servers, but it is not open source: it is proprietary freeware and the source code is not published.
+
+PanelCraft is a Minecraft server web admin panel that you open in a browser. It shows players, chat, bans, inventories, the world map, backups and mod settings in one place, for the server owner and their staff. It runs inside the server as a mod or plugin, or as a separate program next to an unmodified vanilla server, which it talks to over RCON. Players don't install anything; only the server needs PanelCraft.
+
+Who it's for: owners, admins and moderators of Minecraft servers, including modded servers and servers run on hosting panels such as PufferPanel or Pterodactyl. No programming knowledge is needed: if you can copy a file into a folder and edit a text file, you can install it.
+
+Supported servers and versions (latest release v0.1.0, one jar per server type):
+- Forge 1.20.1 (mods/)
+- NeoForge 1.21.1 and 26.3 (mods/)
+- Fabric 1.20.1 and 1.21.1, with Fabric API (mods/)
+- Paper 1.21.1 and 26.3 (plugins/); Spigot, Bukkit and Folia are not supported
+- Vanilla 1.20.1 to 26.3 with the standalone jar, which runs on the same machine and uses RCON
+- Java 17, 21 or 25 depending on the Minecraft version; Linux, Windows or macOS
+- Panel languages: English and Turkish
+
+Key features: server status and live console; restarts with an in-game countdown and maintenance mode; zip backups of the whole world with download and restore; mod settings editor; world settings (game rules, difficulty, time, weather); a top-down world map with live player positions; world tools to find structures, biomes and blocks without loading chunks; block log with rollback; container (storage) log; loot table viewer and editor; mob spawning; player profiles with inventory, ender chest, deaths, notes and alt accounts; warn, mute, freeze, vanish, kick, temporary and permanent bans; chat log and chat filter with escalating sanctions; in-game /report; in-game /register and /login for offline-mode servers; staff roles with Player, Moderator and Admin templates; two-factor sign-in (required for the owner); audit log of every action; light and dark mode. Not every feature exists on every server type; vanilla servers get a smaller set. Integrations for more than 30 mods (for example Curios, FTB Quests, Waystones, Simple Voice Chat, Gravestone) exist on Forge 1.20.1 only.
+
+Licence: PanelCraft is free to download and use on any number of servers you own, operate or administer, including servers that earn money. It is NOT open source. It is proprietary freeware: the source code is not published, and you may not modify, decompile for redistribution, resell, or re-upload the files anywhere other than the official release page (including modpacks) without written permission. It comes as is, without warranty. Bundled open-source libraries keep their own licences.
+
+Install in 3 steps:
+1. Download the one jar that matches your server from the latest release and put it in mods/ (Forge, NeoForge, Fabric) or plugins/ (Paper), then start the server. The console says "PanelCraft listening on port 8150". (Vanilla: run the standalone jar in its own folder with RCON turned on.)
+2. Open the one-time setup code file: config/panelcraft/one-time-code.txt (Paper: plugins/PanelCraft/one-time-code.txt).
+3. Open the panel in your browser (by default http://127.0.0.1:8150 on the server machine), enter the code and your Minecraft name, and turn on two-factor sign-in. For access from other computers, use HTTPS through a reverse proxy or an SSH tunnel.
+
+Bugs and suggestions are welcome. Report bugs in GitHub Issues (use the bug report template) and share feature ideas and questions in GitHub Discussions. Because the source is not public, feedback through these channels is the way to influence PanelCraft. Remove passwords, setup codes and IP addresses before posting.
+
+PanelCraft is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft.
+
+## Docs
+
+- [README (English guide)](https://github.com/panelcraft/panelcraft#readme): full installation guide, features, security, troubleshooting
+- [README (Türkçe rehber)](https://github.com/panelcraft/panelcraft/blob/main/README.tr.md): the same guide in Turkish
+- [Website](https://panelcraft.github.io/panelcraft/): overview, screenshots, download table and FAQ
+- [Full text for LLMs](https://panelcraft.github.io/panelcraft/llms-full.txt): longer plain-text summary of the guide
+- [Licence](https://github.com/panelcraft/panelcraft/blob/main/LICENSE): PanelCraft Freeware Licence
+
+## Downloads
+
+- [Latest release](https://github.com/panelcraft/panelcraft/releases/latest): all jars and SHA256SUMS.txt
+- [Release v0.1.0](https://github.com/panelcraft/panelcraft/releases/tag/v0.1.0): first public release, 8 jars
+
+## Feedback
+
+- [Report a bug](https://github.com/panelcraft/panelcraft/issues/new?template=bug_report.md): GitHub Issues with the bug report template
+- [Ideas and questions](https://github.com/panelcraft/panelcraft/discussions): GitHub Discussions
+- [All issues](https://github.com/panelcraft/panelcraft/issues)
+
+## Optional
+
+- [Third-party notices](https://github.com/panelcraft/panelcraft/blob/main/THIRD-PARTY-NOTICES.md): bundled open-source libraries and their licences
+- [Website in Turkish](https://panelcraft.github.io/panelcraft/tr.html)

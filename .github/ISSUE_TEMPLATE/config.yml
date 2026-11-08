@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ideas & questions
+    url: https://github.com/panelcraft/panelcraft/discussions
+    about: Share ideas, ask how to do something, or talk with other server owners.

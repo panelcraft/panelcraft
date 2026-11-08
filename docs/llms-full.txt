@@ -1,0 +1,97 @@
+# PanelCraft (full text)
+
+> PanelCraft is a free web admin and moderation panel for Minecraft servers: Forge, NeoForge, Fabric, Paper, and vanilla via RCON. Free to use, including on commercial servers. Not open source: proprietary freeware, source code not published. Bug reports and suggestions are welcome.
+
+Website: https://panelcraft.github.io/panelcraft/
+Guide: https://github.com/panelcraft/panelcraft#readme (Turkish: https://github.com/panelcraft/panelcraft/blob/main/README.tr.md)
+Download: https://github.com/panelcraft/panelcraft/releases/latest
+Current version: 0.1.0 (https://github.com/panelcraft/panelcraft/releases/tag/v0.1.0)
+Bugs: https://github.com/panelcraft/panelcraft/issues
+Ideas and questions: https://github.com/panelcraft/panelcraft/discussions
+
+## What it is
+
+PanelCraft is a web moderation panel for Minecraft servers. You open it in a browser and see your players, chat, world and backups in one place. It runs inside the server as a mod or plugin (Forge, NeoForge, Fabric, Paper), or as a separate program next to an unmodified vanilla server, which it talks to over RCON. Only the server needs PanelCraft; players don't install anything. No programming knowledge is needed.
+
+## Licence: free, not open source
+
+- Free to download and use on any number of Minecraft servers you own, operate or administer, including servers that earn money (donations, ranks, paid access).
+- Installing it on a server you run for someone else (as a host or administrator) is allowed, as long as the files come from the official release page.
+- Not open source. The source code is not published. You may not modify, decompile for redistribution, resell, or re-upload the files elsewhere (including modpacks, mod or plugin sites and file hosts) without written permission.
+- Provided as is, without warranty. Keep your own backups.
+- Bundled open-source libraries (Javalin, Jetty, Jackson, SQLite JDBC, bcrypt, SLF4J and others) keep their own licences.
+- Not an official Minecraft product; not approved by or associated with Mojang or Microsoft.
+Full text: https://github.com/panelcraft/panelcraft/blob/main/LICENSE
+
+## Which file to download (v0.1.0)
+
+Install exactly one PanelCraft file per server.
+
+| Server | Minecraft | File | Folder |
+|---|---|---|---|
+| Forge (47.x) | 1.20.1 | panelcraft-forge-1.20.1-0.1.0.jar | mods/ |
+| NeoForge (21.1.x) | 1.21.1 | panelcraft-neoforge-1.21.1-0.1.0.jar | mods/ |
+| NeoForge (26.3.x) | 26.3 | panelcraft-neoforge-26.3-0.1.0.jar | mods/ |
+| Fabric (Loader 0.20.1+, Fabric API) | 1.20.1 | panelcraft-fabric-1.20.1-0.1.0.jar | mods/ |
+| Fabric (Loader 0.20.1+, Fabric API) | 1.21.1 | panelcraft-fabric-1.21.1-0.1.0.jar | mods/ |
+| Paper | 1.21.1 | panelcraft-paper-1.21.1-0.1.0.jar | plugins/ |
+| Paper | 26.3 | panelcraft-paper-26.3-0.1.0.jar | plugins/ |
+| Vanilla | 1.20.1-1.20.6, 1.21-1.21.11, 26.1-26.3 | panelcraft-standalone-0.1.0.jar | its own folder |
+
+Each mod and plugin file works only on that exact Minecraft version. Spigot and Bukkit can't load the Paper files. Folia is not supported. SHA256SUMS.txt on the release page verifies downloads.
+
+## Requirements
+
+- Java: 17+ for Forge 1.20.1, Fabric 1.20.1 and standalone; 21 for NeoForge 1.21.1, Fabric 1.21.1 and Paper 1.21.1; 25 for NeoForge 26.3 and Paper 26.3.
+- Operating system: Linux (x64, arm64), Windows (x64), macOS (x64, Apple Silicon). The built-in database doesn't run elsewhere.
+- No separate database or web server is needed. The panel runs inside the server's Java process with a built-in database.
+- Port 8150 for the panel; by default it only answers on the server machine (127.0.0.1).
+- Internet on the server is recommended (item icons, Turkish game names, skins, Mojang name lookups); the panel works without it.
+- Vanilla only: RCON enabled in server.properties, and PanelCraft on the same machine as the server.
+
+## Install (short)
+
+1. Stop the server and back up the world.
+2. Put the jar in mods/ (Forge, NeoForge, Fabric; Fabric also needs Fabric API) or plugins/ (Paper) and start the server. The console prints "PanelCraft listening on port 8150".
+3. Open config/panelcraft/one-time-code.txt (Paper: plugins/PanelCraft/one-time-code.txt). Open the panel in a browser, enter the code, your Minecraft name and a password of at least 10 characters. The first person to do this becomes the owner. The owner must turn on two-factor sign-in.
+
+Vanilla: enable RCON in server.properties, put the standalone jar in its own folder next to the server, run "java -jar panelcraft-standalone-0.1.0.jar" once, set server_dir under [standalone] in config/panelcraft.toml, and start it again.
+
+Hosting panels (PufferPanel, Pterodactyl): upload the jar with the File Manager, give the panel its own port, and set bind and port under [web]. PanelCraft only stops the server for restarts; the host must start it again (then set supervised = true under [restart]).
+
+## Features
+
+What you see depends on server type and role.
+
+Server: status page; live console with commands for allowed roles; restart with a countdown players see in chat (10 seconds to 10 minutes); maintenance mode; zip backups of the whole world, on demand or scheduled, with download and restore (owner only); mod settings from the browser (per-setting editor with descriptions and risk levels on Forge and NeoForge, file editor on Fabric and Paper); modules can be switched off.
+
+World: game rules, difficulty, time, weather; companion protection for pets; top-down world map drawn from saved world files with live player positions; world tools to find structures, biomes, points of interest and blocks without loading chunks; block log with rollback and undo; storage log and container index; loot table viewer and editor (changes go into the panel's own data pack).
+
+Creatures: loaded mobs around a player or point, spawning mobs; boats, minecarts and modded vehicles with a ride log; NPCs and bounty boards with the Easy NPC and Bountiful mods.
+
+Community: player profiles (inventory, ender chest, deaths with restore, item give and edit, XP, effects, attributes, advancements, staff notes, alt accounts, sanction history); message, teleport, game mode, heal, kick, warn, mute, freeze, vanish, temporary and permanent bans; live chat and searchable chat log; in-game /report; chat filter (block, censor, warn, mute, temporary ban, escalating steps); in-game /register and /login for offline-mode servers.
+
+Panel: staff accounts and invitations; roles with ranks and Player, Moderator and Admin templates; two-factor sign-in (required for the owner, can be required per role); audit log of every action; English and Turkish; light, dark and auto colour scheme; Minecraft-style game theme; Ctrl K search.
+
+Mod integrations (Forge 1.20.1 only, each active only when the mod is installed; built for the mod set of the Legendary Edition modpack): more than 30 mods, including Legendary Survival Overhaul, Iron's Spells 'n Spellbooks, Curios, FTB Quests, FTB Teams, Waystones, Gravestone, Simple Voice Chat, Ice and Fire, Serene Seasons, Lootr, Easy NPC, Bountiful, Spark, Quark, Supplementaries and Artifacts.
+
+Vanilla (standalone, over RCON) gets a smaller set: players (online over RCON, offline read-only), bans, warnings, alts, chat and console from the server log, chat filter acting after the message, world settings, restarts, maintenance and backups (restore prepares a copy you swap by hand). No mute, freeze, vanish, reports, world map, world tools, block log or mod settings on vanilla.
+
+## Security
+
+- Don't expose port 8150 to the internet over plain http. By default it listens on 127.0.0.1 only.
+- For remote access use HTTPS through a reverse proxy (Caddy or nginx on the same machine; trusted_proxies and secure_cookies under [security]) or an SSH tunnel. The proxy must pass the Host header and allow WebSockets.
+- Never open the RCON port (usually 25575).
+- Use strong passwords and two-factor sign-in. After 5 failed sign-ins an account is locked for 15 minutes for that browser or address.
+
+## Commands
+
+Server console: "panelcraft reset <name>" (clears password and two-factor, writes a reset code valid 30 minutes); "panelcraft adduser <name>"; "panelcraft help"; "stop" (standalone only).
+In game: "/panelcraft link <code>" (mod and plugin servers), "/trigger panelcraft set <code>" (vanilla, online mode), "/report <player> <reason>", "/panelcraft timezone", "/register" and "/login" (offline-mode mod and plugin servers).
+
+## Feedback and support
+
+Bug reports and suggestions are welcome. The source code is not public, so GitHub is the place to give feedback.
+- Bugs: https://github.com/panelcraft/panelcraft/issues (bug report template). Include server type, Minecraft version, PanelCraft version, steps, and the console lines starting with "PanelCraft".
+- Ideas, feature requests and questions: https://github.com/panelcraft/panelcraft/discussions
+- Remove passwords, setup and reset codes, RCON passwords and IP addresses before posting.
